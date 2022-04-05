@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ung dung may tinh</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td><input type="text" id="hang1"></td>
+        <td><input type="text" id="hang2"></td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <td>
+            <input type="button" value="Addition(+)" onclick="cong()">
+            <input type="button" value="Subtraction(-)" onclick="tru()">
+            <input type="button" value="Multiplication(X)" onclick="nhan()">
+            <input type="button" value="Division(/)" onclick="chia()">
+        </td>
+    </tr>
+    <tr>
+        <td id="ketqua" >Result:</td>
+    </tr>
+</table>
+<script>
+ function cong()
+ {
+     let t1 = parseFloat(document.getElementById('hang1').value);
+     let t2 = parseFloat(document.getElementById('hang2').value);
+     let resultadd = t1+t2;
+     document.getElementById('ketqua').innerHTML= "ResultAddition:" + resultadd;
+ }
+ function tru()
+ {
+     let t1 = parseFloat(document.getElementById('hang1').value);
+     let t2 = parseFloat(document.getElementById('hang2').value);
+     let resultadd = t1-t2;
+     document.getElementById('ketqua').innerHTML= "ResultSubtraction:" + resultadd;
+ }
+ function nhan()
+ {
+     let t1 = parseFloat(document.getElementById('hang1').value);
+     let t2 = parseFloat(document.getElementById('hang2').value);
+     let resultadd = t1*t2;
+     document.getElementById('ketqua').innerHTML= "ResultMultiplication:" + resultadd;
+ }
+ function chia()
+ {
+     let t1 = parseFloat(document.getElementById('hang1').value);
+     let t2 = parseFloat(document.getElementById('hang2').value);
+     let resultadd = t1/t2;
+     document.getElementById('ketqua').innerHTML= "ResultDivision:" + resultadd;
+ }
+</script>
+
+</body>
+</html>

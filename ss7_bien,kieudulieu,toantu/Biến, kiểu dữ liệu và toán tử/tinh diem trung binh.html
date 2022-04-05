@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tinh diem trung binh</title>
+</head>
+<body>
+<p id="dtb"></p>
+<script>
+    let vatly = parseFloat(prompt("nhap vao diem ly:"));
+    let toan = parseFloat(prompt("nhap vao diem toan:"));
+    let hoa = parseFloat(prompt("nhap vao diem hoa:"));
+    let diemtrungbinh =(vatly + toan +hoa)/3 ;
+    document.getElementById("dtb").innerText = "ketqua : = " + diemtrungbinh;
+</script>
+</body>
+</html>
+
