@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let goi=parseFloat(prompt('so phut goi:'));
+    if (goi>15){
+        let cuoc= goi*500;
+        document.write(+cuoc+"VND");
+    }else if((goi<=15)&&(goi>=10)) {
+        let cuoc=goi*400;
+        document.write(+cuoc+"VND");
+    }else {
+        let cuoc=goi*200;
+        document.write(+cuoc+"VND");
+    }
+</script>
+
+</body>
+</html>

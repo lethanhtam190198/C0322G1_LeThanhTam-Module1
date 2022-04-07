@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+  <tr>
+    <td> <input type="text" style="width: 260px" id="display"></td>
+  </tr>
+<table cellpadding="8">
+  <tr>
+    <td><input type="button" value="1" onclick="nb(1)"></td>
+    <td><input type="button" value="2" onclick="nb(2)"></td>
+    <td><input type="button" value="3" onclick="nb(3)"></td>
+    <td><input type="button" value="+" onclick="nb('+')"></td>
+  </tr>
+  <tr>
+    <td><input type="button" value="4" onclick="nb(4)"></td>
+    <td><input type="button" value="5" onclick="nb(5)"></td>
+    <td><input type="button" value="6" onclick="nb(6)"></td>
+    <td><input type="button" value="-" onclick="nb('-')"></td>
+  </tr>
+  <tr>
+    <td><input type="button" value="7" onclick="nb(7)"></td>
+    <td><input type="button" value="8" onclick="nb(8)"></td>
+    <td><input type="button" value="9" onclick="nb(9)"></td>
+    <td><input type="button" value="x" onclick="nb('*')"></td>
+  </tr>
+  <tr>
+    <td><input type="button" value="C" onclick="xoa()"></td>
+    <td><input type="button" value="0" onclick="nb(0)"></td>
+    <td><input type="button" value="=" onclick="bang()"></td>
+    <td><input type="button" value="/" onclick="nb('/')"></td>
+  </tr>
+</table>
+</table>
+<script>
+  function nb(input){
+    document.getElementById("display").value= document.getElementById("display").value + input;
+  }
+  function bang() {
+    let result =eval( document.getElementById("display").value);
+    document.getElementById("display").value = result;
+  }
+  function xoa() {
+    document.getElementById("display").value ="";
+  }
+
+</script>
+
+</body>
+<style>
+  td {}
+  input {width: 50px;}
+</style>
+</html>

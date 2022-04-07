@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>phuong trinh bac 2</title>
+</head>
+<body>
+<script>
+    let a=parseFloat(prompt("nhap a:"));
+    let b=parseFloat(prompt('nhap b:'));
+    let c=parseFloat(prompt('nhap c:'));
+    let delta=(b*b)-(4*a*c);
+    let d =Math.sqrt(delta);
+    if (delta<0){
+        alert('Phuong trinh vo nghiem');
+    }
+    else if (delta===0){
+        nghiem1=(-b)/(2*a);
+        alert(nghiem1);
+    }
+    else{
+        nghiem2=((-b+ d)/(2*a));
+        nghiem3=((-b- d)/(2*a));
+        alert(nghiem2+'and'+nghiem3);
+    }
+</script>
+
+</body>
+</html>

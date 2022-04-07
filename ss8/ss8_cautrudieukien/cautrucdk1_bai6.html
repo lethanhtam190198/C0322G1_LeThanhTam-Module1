@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let ds=parseFloat(prompt('nhap doanh so ban hang'));
+    if(ds>=1000){
+        let hh=ds/10;
+        document.write(hh);
+    }
+    else if((ds<1000) && (ds>=100)){
+        let hh=ds/5;
+        document.write(hh);
+    }
+    else {document.write(0)}
+</script>
+
+</body>
+</html>
