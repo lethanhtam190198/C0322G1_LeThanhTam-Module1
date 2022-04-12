@@ -14,15 +14,17 @@
     let grosspProfit;
     for (let i = 1; i <= month; i++) {
         if (month <= 12) {
-            interest = money * INTEREST1;
+            interest = money*INTEREST1;
             grosspProfit = money + interest;
             money=grosspProfit;
-            document.write("Số Tiền Tháng"+" " + i + ":" +" " + interest + "<br>");
+            document.write("Số Tiền Tháng"+" " + i + ":" +" " + grosspProfit + "<br>");
+            document.write("Tiền lãi"+" " + i + ":" +" " + interest + "<br>");
         } else {
             interest = money * INTEREST2;
             grosspProfit = money + interest;
             money=grosspProfit;
-            document.write("Số Tiền Tháng"+" " + i + ":" +" " + interest + "<br>");
+            document.write("Số Tiền Tháng"+" " + i + ":" +" " + grosspProfit + "<br>");
+            document.write("Tiền lãi"+" " + i + ":" +" " + interest + "<br>");
         }
 
     }
