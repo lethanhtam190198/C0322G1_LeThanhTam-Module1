@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ve hinh chu nhat</title>
+</head>
+<body>
+<script>
+    let cd=parseInt(prompt('nhap vao chieu dai hinh chu nhat'));
+    let cr=parseInt(prompt('nhap vao chieu rong hinh chu nhat'));
+    for(let k=1;k<=cr;k++)
+    {
+        for(let i=1;i<=cd;i++)
+        {
+            if((i===1||i===cd||k===1||k===cr))
+            {
+                document.write("*");
+            }
+            else
+            {
+                document.write("&nbsp&nbsp");
+            }
+        }document.write('<br>');
+    }
+</script>
+
+</body>
+</html>
+
+
+
+<!--<script>-->
+<!--    let cd=parseInt(prompt('nhap vao chieu dai hinh chu nhat'));-->
+<!--    let cr=parseInt(prompt('nhap vao chieu rong hinh chu nhat'));-->
+<!--    document.write('<table>');-->
+<!--    for(let k=1;k<=cr;k++)-->
+<!--    {-->
+<!--        document.write("<tr>");-->
+<!--        for(let i=1;i<=cd;i++)-->
+<!--        {-->
+<!--            if((i===1||i===cd||k===1||k===cr))-->
+<!--            {-->
+<!--                document.write("<td>");-->
+<!--                document.write("*");-->
+<!--                document.write("</td>");-->
+<!--            }-->
+<!--            else-->
+<!--            {-->
+<!--                document.write("<td>");-->
+<!--                document.write("&nbsp&nbsp");-->
+<!--                document.write("</td>");-->
+<!--            }-->
+<!--        }-->
+<!--        document.write("</tr>");-->
+<!--    }-->
+<!--    document.write('</table>');-->
+<!--</script>-->
+

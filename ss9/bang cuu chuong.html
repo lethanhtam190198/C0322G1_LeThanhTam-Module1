@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let sum = "<table border='1' width='800' cellspacing='3' cellpadding='3'>";
+  for(let j=1;j<=10;j++){
+      sum = sum + "<tr>";
+      for (let i=2;i<=9;i++) {
+          sum = sum + "<td>" + i + "x" + j + "=" + i * j + "</td>";
+      }
+      sum = sum + "</tr>";
+  }
+  sum = sum + "</table>";
+  document.write(sum);
+</script>
+
+</body>
+</html>
+
+<!--let j=1;j<=10;j++-->
+<!--i=2;i<=9;i++-->

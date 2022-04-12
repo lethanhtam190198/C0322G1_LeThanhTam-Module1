@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lai ngan hang</title>
+</head>
+<body>
+<script>
+    let money =parseFloat(prompt('nhap so tien trong ngan hang:'));
+    let month=parseFloat(prompt('nhap so thang ban gui:'));
+    let interest;
+    let amout;
+    for(let i=1;i<=month;i++){
+        interest= money + money*3/100;
+        amout= interest-money;
+    }
+    document.write('interest:'+interest+'<br>');
+    document.write('amout:'+amout)
+</script>
+
+</body>
+</html>

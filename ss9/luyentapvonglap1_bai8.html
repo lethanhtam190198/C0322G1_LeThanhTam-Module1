@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>game doan so</title>
+</head>
+<body>
+<h3>Game Đoán Số</h3>
+<button type="button" onclick="abc()">Start</button>
+<script>
+    function abc(){
+        let b = Math.floor(Math.random() * 10);
+        let i=0;
+        do{
+            let a =prompt("nhap 1 so bat ki ");
+            if (a<b) {
+                alert('số bạn đoán bé hơn');
+            }
+            else if(a>b) {
+                alert('số bạn đoán lớn hơn');
+            }
+            else {
+                alert('chúc mừng số bạn đoán đúng');
+                break;
+            }
+            i++;
+        }
+        while (i<9);
+        if(i===9) {
+            alert('Bạn đã nhập sai quá 9 lần');
+        }
+    }
+</script>
+</body>
+</html>
+
+
+
+
+<!--<script>-->
+<!--    var a = Math.floor(Math.random() * 10) + 1;-->
+<!--    document.write(a);-->
+<!--</script>-->
+<!--<hr>-->
+<!--<h2>Bấm vào nút "Xem kết quả" để xem kết quả mới.</h2>-->

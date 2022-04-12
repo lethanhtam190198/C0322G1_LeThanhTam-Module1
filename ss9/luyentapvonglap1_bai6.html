@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tong 30 so dau tien chia het cho 7</title>
+</head>
+<body>
+<script>
+    let count = 0;
+    let sum = 0;
+    for (let i = 1; ; i++) {
+        if (i % 7 === 0) {
+            document.write(i + "<br>");
+            sum = sum + i;
+            count++;
+            if (count === 30)
+                break;
+        }
+    }
+    document.write("<br>");
+    document.write("Tổng 30 so la: " + sum);
+</script>
+</body>
+</html>
