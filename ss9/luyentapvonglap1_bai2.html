@@ -6,14 +6,18 @@
 </head>
 <body>
 <script>
-    let c=parseFloat(prompt('nhap vao nhiet do'));
-    do{
-        if(c<20){
-            alert("tang nhiet do")
-        }
-    }while (c>100){
-        alert("giam nhiet do")
+    do {
+        let c = parseFloat(prompt('nhap vao nhiet do'));
+            if (c < 20) {
+                alert("Tăng nhiệt độ");
+            } else if (c > 100) {
+                alert("Giảm nhiệt độ");
+            } else {
+                alert("ok");
+                break;
+            }
     }
+    while (true)
 </script>
 
 </body>

@@ -12,12 +12,12 @@
     let nextnumber;
     document.write("Fibonacci :"+"<br>");
     for (let i = 1; i <= number; i++) {
-        if (nextnumber%5===0) {
-            document.write("so dau tien trong day chia het cho 5:"+ nextnumber);break;
-        }
         nextnumber = n1 + n2;
         n1 = n2;
         n2 = nextnumber;
+        if (nextnumber%5===0) {
+            document.write("so dau tien trong day chia het cho 5:"+ nextnumber);break;
+    }
     }
 </script>
 </body>

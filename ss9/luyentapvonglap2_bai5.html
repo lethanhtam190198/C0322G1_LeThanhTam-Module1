@@ -9,8 +9,8 @@
     let money = parseFloat(prompt('Nhập số tiền gửi ngân hàng:'));
     let month = parseFloat(prompt('Nhập số tháng gửi:'));
     let interest;
-    const INTEREST1 = 0.3;
-    const INTEREST2 = 0.4;
+    const INTEREST1 = 0.03;
+    const INTEREST2 = 0.04;
     let grosspProfit;
     for (let i = 1; i <= month; i++) {
         if (month <= 12) {
@@ -18,13 +18,13 @@
             grosspProfit = money + interest;
             money=grosspProfit;
             document.write("Số Tiền Tháng"+" " + i + ":" +" " + grosspProfit + "<br>");
-            document.write("Tiền lãi"+" " + i + ":" +" " + interest + "<br>");
+            document.write("Tiền lãi Tháng"+" " + i + ":" +" " + interest + "<br>");
         } else {
             interest = money * INTEREST2;
             grosspProfit = money + interest;
             money=grosspProfit;
             document.write("Số Tiền Tháng"+" " + i + ":" +" " + grosspProfit + "<br>");
-            document.write("Tiền lãi"+" " + i + ":" +" " + interest + "<br>");
+            document.write("Tiền lãi Tháng"+" " + i + ":" +" " + interest + "<br>");
         }
 
     }
