@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sắp xếp giảm dần</title>
+</head>
+<body>
+<script>
+    let a = [];
+    for (let i = 0; i < 4; i++) {
+        a[i] = parseInt(prompt("nhap vao 10 phan tu cua mang"));
+    }
+    document.write("Mang duoc nhap:" +a +"<br>");
+    let i, j;
+    for (i = 0; i < a.length; i++) {
+        for (j = i+1; j < a.length; j++) {
+            if (a[i] <a[j]) {
+                let b=a[i];
+                a[i]=a[j];
+                a[j]=b;
+            }
+       }
+    }
+    document.write("Mang duoc sap xep:"+a);
+</script>
+</body>
+</html>

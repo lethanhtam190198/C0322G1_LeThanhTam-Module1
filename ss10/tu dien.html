@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Từ Điển</h3>
+<form>
+    <input type="text" id="search" placeholder="Nhập từ cần tìm">
+    <input type="submit" value="Tìm" onclick="abc()">
+</form>
+<script>
+    function abc() {
+        let english = ["hello", "good morning", "beatifull", "red","cat"];
+        let vietnam = ["xin chào", "chào buổi sáng", "đẹp", "màu đỏ","con mèo"];
+        let a = document.getElementById("search").value;
+        let index = -1;
+        for (let i = 0; i < english.length; i++) {
+            if (a === english[i]) {
+                index = i;
+                document.write(vietnam[index]);
+                index = 1;
+            }
+        }
+        if (index === -1) {
+            document.write("Không tìm thấy");
+        }
+    }
+</script>
+</body>
+</html>

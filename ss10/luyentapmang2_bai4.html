@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dem so lam xuat hien cua tu</title>
+</head>
+<body>
+<script>
+    let a = "abcdefghjklqwertyuiopzxcvbnmasdfghjkl"
+    let dem = 0;
+    let b = prompt("nhap tu ban muon:");
+    for (let i = 0; i < a.length; i++) {
+        if (b.indexOf(a[i]) !== -1) {
+            dem++;
+        }
+
+    }
+    document.write("có" +" "+ dem +" "+ "chu" +" "+ b);
+</script>
+
+</body>
+</html>
+
