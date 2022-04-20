@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  function smallestnumber() {
+    let a = Array();
+    for (let i = 0; i < 3; i++) {
+      a[i] = parseInt(prompt("Nhập phần tử:"));
+    }
+
+    let min = a[0];
+    for (let j = 1; j < a.length; j++) {
+      if (min > a[j]) {
+        min = a[j];
+      }
+    }
+    return (min);
+  }
+  document.write(smallestnumber());
+</script>
+</body>
+</html>
