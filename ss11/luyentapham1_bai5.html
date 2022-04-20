@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function search(x) {
+        let star = ["polaris", "Aldebaran", "deneb", "vega", "altair", "dubhe", "regulus"]
+        let constellation = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"]
+        for (let i = 0; i < star.length; i++)
+        {
+            if (x === star[i]) {
+                return constellation[i];
+            }
+        }
+        return 0
+    }
+
+    let searchstar = prompt("Nhập tên ngôi sao")
+    let star = search(searchstar);
+    if (star) {
+        document.write(star);
+    } else {
+        document.write("Không tìm thấy");
+    }
+</script>
+</body>
+</html>
