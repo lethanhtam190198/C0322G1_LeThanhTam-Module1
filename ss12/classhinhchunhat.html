@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Rectangle{
+        getLength() {
+            return this._length;
+        }
+
+        getWidth() {
+            return this._width;
+        }
+        constructor(length,width) {
+            this._length = length;
+            this._width = width;
+        }
+        acreage(){
+            return this._length*this._width;
+        }
+        perimeter(){
+            return (this._length+this._width)*2;
+        }
+    }
+    let rectangle = new Rectangle(7,8);
+    document.write("Diện tích hình chữ nhật"+rectangle.acreage()+"<br>");
+    document.write("Chu vi hình chữ nhật"+rectangle.perimeter());
+</script>
+
+</body>
+</html>

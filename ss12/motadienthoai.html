@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>
+            <button type="button" onclick="main()"> DIENTHOAIDANGBAT</button>
+        </td>
+        <td>
+            <button type="button" onclick="main1()"> DIENTHOAIDANGTAT</button>
+        </td>
+        <td>
+            <button type="button" onclick="main2()"> Xạc Pin</button>
+        </td>
+        <td>
+            <button type="button" onclick="main3()"> VIET TIN NHAN</button>
+        </td>
+        <td>
+            <button type="button" onclick="main4()"> SU DUNG DI</button>
+        </td>
+        <td>
+            <button type="button" onclick="main5()"> SU DUNG DI</button>
+        </td>
+    </tr>
+</table>
+<script>
+    class Mobile {
+        constructor(battery) {
+            this.battery = battery;
+        }
+        turnOn = function () {
+            alert("Dienthoaidangbat");
+        };
+        turnOf = function () {
+            alert("Dienthoaidangtat");
+        };
+        charge = function () {
+            alert("Xạc Pin" + this.battery++);
+        };
+        writeMessenger = function () {
+            prompt("This is a messenger");
+        };
+        massengerL = function () {
+            alert("massenger da gui");
+        };
+        afterUse = function () {
+            alert("Dung mot chuc nang :" + this.battery--);
+        }
+    }
+
+    var Mobilemobile = new Mobile(10);
+
+    function main() {
+        Mobilemobile.turnOf();
+    }
+
+    function main1() {
+        Mobilemobile.turnOn();
+    }
+
+    function main2() {
+        Mobilemobile.charge();
+    }
+
+    function main3() {
+        Mobilemobile.writeMessenger();
+    }
+
+    function main4() {
+        Mobilemobile.massengerL();
+    }
+
+    function main5() {
+        Mobilemobile.afterUse();
+    }
+</script>
+</body>
+</html>
