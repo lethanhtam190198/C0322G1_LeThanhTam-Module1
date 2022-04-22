@@ -5,26 +5,27 @@
     <title>Title</title>
 </head>
 <body>
-<form action="">
+<form>
     <p>
-        <label for="inputMet">Foot: </label>
-        <input type="number" id="inputMet" placeholder="Nhập Feet" oninput="convertMet(this.value)" onchange="convertMeter(this.value)">
+        <label>Feet</label>
+        <input type="number" id="inputMet" placeholder="Nhập Feet" oninput="convertMet(this.value)">
     </p>
     <p>Meters: <span id="outputFeet"></span></p>
     <p>
-        <label for="inputFeet">Meters: </label>
-        <input type="number" id="inputFeet" placeholder="Nhập Metter" oninput="convertFeet(this.value)" onchange="convertFeet(this.value)">
+        <label>Meters</label>
+        <input type="number" id="inputFeet" placeholder="Nhập Metter" oninput="convertFeet(this.value)">
     </p>
-    <p>Foot: <span id="outputMeter"></span></p>
+    <p>Feet: <span id="outputMeter"></span></p>
 </form>
 <script>
-    function convertMet(valFeet) {
-        Feet = parseFloat(valFeet);
-        document.getElementById('outputFoot').innerHTML = Feet * 0.305;
+    function convertMet(isFeet) {
+        feet = parseFloat(isFeet);
+        document.getElementById("outputFeet").innerHTML = feet * 0.305;
     }
-    function convertFeet(valMeter) {
-        Meter = parseFloat(valMeter);
-        document.getElementById('outputMeter').innerHTML = Meter * 3.279;
+
+    function convertFeet(isMeter) {
+        meter = parseFloat(isMeter);
+        document.getElementById("outputMeter").innerHTML = meter * 3.279;
     }
 </script>
 </body>
